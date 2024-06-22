@@ -1,0 +1,372 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 50px;
+    justify-content: center;
+    background-color: #f8f8ff;
+    font-size: 14px;
+    line-height: 20px;
+    color: #636366;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.firefly {
+  width:4px;
+  height:4px;
+  position:absolute;
+  background-color: #ecc45e;
+  box-shadow:0px 0px 17px 2px wheat;
+  border-radius: 50%;
+}
+
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #3b4144;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+h1 {
+    line-height: 60px;
+}
+h2 {
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+h3 {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+h5 {
+    font-size: 13px;
+    line-height: 25px;
+}
+p {
+    font-size: 13px;
+    line-height: 23px;
+}
+.top-nav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; /* 外距 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index:5;
+}
+.top-nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 10px; /* 內間距 */
+    
+}
+.top-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.resume {
+    margin: 0 auto;
+    max-width: 850px;
+    min-width: 700px;
+    border: solid #fff 3px; 
+    padding: 25px;
+    overflow: hidden;
+}
+
+
+
+.skill {
+    position: relative;
+    top: 50%;
+    left: 45%;
+}
+.decoration {
+    width: 300px;
+    height: 100px;
+    background: linear-gradient(135deg, #ffb2e4, #82d5ff);
+    border-radius: 70px;
+    position: absolute;
+    transform: rotate(-30deg);
+}
+.decoration:nth-of-type(1) {
+    top: -95px;
+    left: 74%;
+}
+.decoration:nth-of-type(2) {
+    top: 40px;
+    left: 71%;
+    width: 400px;
+}
+.top, .left, .right, .footer {
+    padding: 15px;
+}
+.content {
+    display: block;
+}
+.left {
+    padding-right: 0;
+    padding-left: 0;
+}
+.right {
+    padding-left: 40px; 
+    padding-right: 40px;
+
+    
+    padding: 0px 20px; 
+
+   
+    border-left: 3px solid #fff;
+}
+.top {
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+.footer {
+    margin-top: 30px;
+    padding-left: 40px;
+}
+.myPhoto, .nameCircle {
+    overflow:hidden;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-size: 120px 120px;
+    background-position: center;
+}
+.myPhoto img{
+  
+  width:100%;
+}
+.nameCircle {
+    
+    position: absolute;
+    left: 35px;
+    z-index: -1;
+    background: linear-gradient(135deg, #ffb2e4, #82d5ff);
+    border: none;
+}
+
+
+.myName {
+    overflow:hidden;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.circle {
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid #3b4144;
+    background-size: 90px 90px;
+    background-position: center;
+}
+.circle img{
+  width:100%
+}
+
+
+.circle-image1, .circle-image2, .circle-image3,   {
+    
+    background-size: 90px 90px;
+    background-position: center;
+}
+.buttons {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.btn {
+    padding: 5px 20px;
+    background-color: #fbfbff;
+    margin-right: 10px;
+    border: 1px solid #636366;
+    font-family: 'Open Sans', sans-serif;
+}
+.btn:hover {
+    background: linear-gradient(135deg, #ffb2e4, #82d5ff);
+    border: 1px solid #ddd;
+    color: #fff;
+}
+.listPassion {
+    display: flex;
+    flex-wrap: wrap;
+}
+.listPassion > li {
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.listSkill {
+    margin-bottom: 40px;
+}
+.listSkill > ul {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.listSkill > li {
+    padding-left: 10px;
+}
+.skillLevel {
+    width: 65px;
+    height: 55px;
+    border: 3px solid #dfdfff;
+    text-align: center;
+    position: relative;
+    margin-left: 10px;
+    padding-top: 13px;
+    z-index: -2;
+}
+.level1, .level2 {
+    position: absolute;
+    background-color: #F8F8FF;
+    z-index: -1;
+}
+.level1 {
+    width: 35px;
+    height: 30px;
+    left: -3px;
+    top: 22px;
+}
+.level2 {
+    width: 65px;
+    left: -3px;
+    top: -3px;
+    height: 30px;
+}
+.listAward > li {
+    margin-top: 10px;
+    padding-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer {
+    position: relative;
+}
+.footerCircle {
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(135deg, #ffb2e4, #82d5ff);
+    position: absolute;
+    border-radius: 50%;
+    top: 30px;
+    left: -100px;
+    z-index: -1;
+}
+.time {
+    padding-left: 30px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 27px;
+    position: relative;
+}
+.decorationLine {
+    position: absolute;
+    height: 6px;
+    margin-top: 20px;
+    line-height: 35px;
+    font-family: 'Open Sans', sans-serif;
+}
+.decorationCircle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #82d5ff;
+}
+.snow-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 99;
+}
+
+.snow {
+  width: 50px;
+  height: 50px;
+  background: pink;
+  border-radius: 50%;
+  -webkit-animation: fallingAnimation 3s linear infinite;
+          animation: fallingAnimation 3s linear infinite;
+
+  position: absolute;
+ 
+  top: -40px; /*40 is sth here todo*/
+}
+
+
+.snow:nth-child(1) {
+  left: 80%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+
+.snow:nth-child(2) {
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+
+.snow:nth-child(1) {
+  left: 25%;
+  width: 40px;
+  height: 40px;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+@-webkit-keyframes fallingAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes fallingAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
